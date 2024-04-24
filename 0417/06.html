@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        h1:hover{
+            color: red;
+        }
+
+        h1:active{
+            color:rgb(95, 255, 95);
+        }
+
+        input:enabled{
+           background-color: pink;
+        }
+         
+        input:disabled{
+           background-color: gray;
+        }
+
+        input:focus{
+           background-color:orange;
+        }
+     </style>
+</head>
+<body>
+    <h1>반응 선택자</h1>
+    <form action="">
+        사용 가능: <input type="text"  size="20"><br><br>
+        사용 불가능: <input type="text"  size="20" disabled="disabled"><br><br>
+    </form>
+</body>
+</html>
