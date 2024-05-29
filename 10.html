@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu{
+            width: 260px;
+            float: right;
+        }
+
+        #section{
+            width: 700px;
+            float: left; 
+        }
+
+        li{
+            list-style: none;
+        }
+        /*소형 디바이스인 경우 스타일 */
+        @media screen and (max-width: 767px){
+            body{
+                width: auto;
+            }
+
+            #menu{
+                width: auto;
+                float: none;
+            }
+
+            #section{
+                width: auto;
+                float: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+       <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+       </ul>
+    </div>
+    <div id="section">
+      <h1>반응형 웹 패턴2(오른쪽 메뉴가 위쪽으로 이동)</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit suscipit hic eligendi laboriosam minima aspernatur, ducimus quia eaque dicta consequuntur? Deleniti quod, corrupti enim dolorum quasi corporis molestiae sit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quasi, ipsam in at tenetur nesciunt similique, nobis quod doloremque libero natus veritatis rerum ipsa laboriosam repellat commodi sunt, eaque quos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit suscipit hic eligendi laboriosam minima aspernatur, ducimus quia eaque dicta consequuntur? Deleniti quod, corrupti enim dolorum quasi corporis molestiae sit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quasi, ipsam in at tenetur nesciunt similique, nobis quod doloremque libero natus veritatis rerum ipsa laboriosam repellat commodi sunt, eaque quos!
+      </p>
+    </div>
+</body>
+</html>
