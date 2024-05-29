@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> /* css 스타일을 다르게 할수있음*/
-        @media screen { 
+        /* 스마트폰(소형 디바이스인 경우)*/
+        @media screen and (max-width: 767px){ 
             body{
-                background-color: aquamarine;
+                background-color: rgb(170, 24, 31);
             }
         }
 
-        @media print {
+      /* 스마트폰(소형 디바이스인 경우)*/
+      @media screen and (min-width: 768px) and (max-width: 959px) { 
             body{
-                background-color: orangered;
+                background-color: rgb(50, 93, 185);
             }
         }
+
+         /* 스마트폰(대형 디바이스인 경우)*/
+        @media screen and (max-width: 960px) { 
+            body{
+                background-color: rgb(218, 168, 32);
+            }
+        }
+
     </style>
 </head>
 <body>
