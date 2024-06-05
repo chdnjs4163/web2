@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>//변수 선언 
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+        let dateStr = year + "년 " + month + "월 " + day + "일";
+        let time = hour + " : " + minute + " : " + second
+        alert(dateStr + "\n" + time);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
