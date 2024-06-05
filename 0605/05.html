@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nowDate = new Date();
+        let hour = nowDate.getHours();
+        let result = ""; //변수를 초기화 시키는거 저런식으로 선언만 해도됨
+
+        if(hour < 5)
+           result = " 잠을 더 잘 수 있어요.";
+        else if ( hour < 7)//5시이상 7시미만
+           result = " 등교 준비를 하세요.";
+           else if ( hour < 9) // 7시이상 9시미만
+           result = " 등교 준비를 하세요.";
+           else if ( hour < 12) // 9시이상 12시미만
+           result = "학교에서 열심히 오전 수업을 하세요.";
+           else if ( hour < 14) // 12시이상 14시미만
+           result = "맛있게 점심을 드세요.";
+           else{
+               resutt = "열심히 오후 수업을 듣고 하교하세요.";
+           }
+
+           alert(result);
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
