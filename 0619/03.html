@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeText(){
+         let result = "";
+         for(let i = 0; i < 10; i++){
+            result += "<h1>Javeascript - "+ (i+1) +"</h1>";
+         }
+         
+         //순수한 텍스트로 설정할 떄 
+          //document.body.textContent = result;
+          
+          //텍스트의 태그가 실행되게 할 떄 
+          document.body.innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="changeText()">
+    
+</body>
+</html>
