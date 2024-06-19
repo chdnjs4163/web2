@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function divGradient(){
+            let result = "";
+            for(let i =0; i < 256; i++){
+                result += "<div></div>";
+            }
+            document.body.innerHTML = result;
+            let divs = document.querySelectorAll("div");
+            // css style 적용(div 높이와 배경색)
+            for(let i = 0; i < divs.length; i++){
+                divs[i].style.height = "3px";
+                divs[i].style.background = "rgb( 255, "+ i +", "+ i +")";
+
+            }
+        }
+    </script>
+</head>
+<body onload="divGradient()">
+    
+</body>
+</html>
