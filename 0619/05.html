@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function  changeImage(){
+        let obj = document.getElementById("img1");
+        obj.src = "https://file.bodnara.co.kr/logo/insidelogo.php?image=%2Fhttp%3A%2F%2Ffile.bodnara.co.kr%2Fwebedit%2Fhardward%2Fgame%2Fdragonball_fighterz%2Fdfz2.jpg/300x200"
+        obj.width = 300;
+        obj.height = 200;
+    }
+    </script>
+</head>
+<body>
+    <img id="img1">
+    <button type="button" onclick="changeImage()">이미지 설정</button>
+</body>
+</html>
