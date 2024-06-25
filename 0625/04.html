@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            let btnA = document.getElementById("btnA");
+            btnA.onclick = function(){
+               //고유하게 가지고 있는 이벤트 처리 기능을 상실하게 된다.
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <a href="https://www.kopo.ac.kr/index.do" id="btnA">한국폴리텍대학</a>
+</body>
+</html>
